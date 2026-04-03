@@ -26,7 +26,7 @@ func main() {
 	}
 	defer db.Close()
 
-	srv := server.New(db)
+	srv := server.New(db, server.DefaultLimits())
 
 	fmt.Printf("\n  Typeset — Self-hosted documentation generator\n")
 	fmt.Printf("  ─────────────────────────────────\n")
